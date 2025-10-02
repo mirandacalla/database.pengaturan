@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <p class="title-page">
+        rapat koordinasi perencanaan penyusunan rancangan peraturan daerah dan rancangan peraturan gubernur tahun 2026
+    </p>
+    <!-- Live Google Sheet -->
+<div style="width:100%; overflow:hidden;"> 
+    <iframe src="https://docs.google.com/spreadsheets/d/1QUawkqRUQ6irsunObSmAYf_pOFyQ3QNMWSn39xCDOnI/edit" 
+    style="border:none; width:111%; height:700px; transform:scale(0.9); transform-origin:0 0;"> 
+    </iframe> 
+</div>
+
+
+
+</body>
+</html>
