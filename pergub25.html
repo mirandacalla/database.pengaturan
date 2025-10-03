@@ -4,21 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
+    
     <p class="title-page">
-        rapat koordinasi perencanaan penyusunan rancangan peraturan daerah dan rancangan peraturan gubernur tahun 2026
+        Daftar Rancangan Peraturan Gubernur 2025
     </p>
+    
+
+    <!-- !-- Alert Popup -->
+  <div class="alertBox" id="alertBox">
+    <div class="alertContent">
+      <h3>Informasi Penting</h3>
+      <p>
+        Pada kolom <b>Status</b> terdapat 2 pilihan: <br>
+        <b>Lanjut</b> atau <b>Tidak Lanjut</b>.
+      </p>
+      <p>
+        Jika memilih <b>Tidak Lanjut</b>, mohon tambahkan <b>keterangan</b>
+        alasan, karena judul tersebut akan <b>dihapus</b> dari SK Propemperkada.
+      </p>
+      <button onclick="closeAlert()">Saya Mengerti</button>
+    </div>
+  </div>
+    
+        <a href="index.html" class="cta-back">
+        Kembali </a>
+    
+            
+            <!-- <p class="subtitle">
+                <i class="fa-solid fa-exclamation subtitles"></i>
+                mohon untuk menambahkan keterangan ranpergub masing-masing OPD
+            jika memilih opsi "tidak lanjut" mohon untuk menambahkan 
+            alasannya sehingga akan dihapus dari SK Prompemperkada 2025.</p> -->
     <!-- Live Google Sheet -->
 <div style="width:100%; overflow:hidden;"> 
     <iframe src="https://docs.google.com/spreadsheets/d/1QUawkqRUQ6irsunObSmAYf_pOFyQ3QNMWSn39xCDOnI/edit" 
-    style="border:none; width:111%; height:700px; transform:scale(0.9); transform-origin:0 0;"> 
+    style="border:none; width:111%; height:550px; transform:scale(0.9); transform-origin:0 0;"> 
     </iframe> 
+
+
+
+
 </div>
+<script>
+    // Fungsi untuk menutup alert
+    function closeAlert() {
+      document.getElementById("alertBox").style.display = "none";
+    }
 
-
-
+    // Tampilkan popup otomatis ketika halaman dibuka
+    window.onload = function() {
+      document.getElementById("alertBox").style.display = "flex";
+    }
+</script>
 </body>
 </html>
