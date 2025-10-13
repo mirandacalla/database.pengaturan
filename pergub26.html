@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    
+    <p class="title-page">
+        Daftar Rancangan Peraturan Gubernur 2025
+    </p>
+  
+
+    <div class="footer-links">
+    <a href="indexx.html" class="footer-link">Kembali <i class="fa-solid fa-arrow-left" style="color: #094fb9;"></i></a>
+    </div>
+
+<!-- Alert Popup -->
+  <div class="alertBox" id="alertBox">
+  <div class="alertContent">
+    <h3>Panduan Pengisian Data</h3>
+    <p>
+      Sebelum mengisi data pada lembar kerja ini, mohon perhatikan hal-hal berikut:
+    </p>
+    <ol style="text-align: left; margin-left: 20px;">
+      <li>
+        <b>OPD Pemrakarsa</b> wajib menuliskan <b>nomenklatur perangkat daerah secara lengkap</b> 
+        (tidak disingkat).
+      </li>
+      <li>
+        Untuk judul rancangan yang memilih opsi <b>"Tidak Lanjut"</b>, 
+        <b>wajib mencantumkan keterangan (catatan)</b> alasan, 
+        karena judul tersebut akan <b>dihapus</b> dari SK Propemperkada.
+      </li>
+    </ol>
+    <button onclick="closeAlert()">Saya Mengerti</button>
+  </div>
+</div>
+
+
+  <div style="width:100%; overflow:hidden;">
+    <iframe 
+      src="https://docs.google.com/spreadsheets/d/1QUawkqRUQ6irsunObSmAYf_pOFyQ3QNMWSn39xCDOnI/edit" 
+      style="border:none; width:111%; height:550px; transform:scale(0.9); transform-origin:0 0;">
+    </iframe>
+  </div>
+
+  <script>
+    // Fungsi untuk menutup alert
+    function closeAlert() {
+      document.getElementById("alertBox").style.display = "none";
+    }
+
+    // Tampilkan popup otomatis ketika halaman dibuka
+    window.onload = function() {
+      document.getElementById("alertBox").style.display = "flex";
+    }
+  </script>
+</body>
+</html>
