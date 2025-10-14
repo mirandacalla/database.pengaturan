@@ -63,7 +63,7 @@ body {
 font-family: var(--font-secondary);
 text-align: center;
 font-size: var(--font-size-medium);
-margin: 1rem;
+margin: var(--spacing-small) 0;
 color: var(--warm-off-white);
 text-transform: uppercase;
 }
@@ -195,10 +195,11 @@ text-transform: uppercase;
 .materi {
   width: 90%;
   /* height: 80vh; */
-  margin: rem auto 2rem auto;
+  margin: 5rem auto 2rem auto;
   padding: 10px;
   text-align: center ;
   align-items: center;
+ 
   
 }
 
@@ -213,4 +214,10 @@ text-transform: uppercase;
 .materi-list span{
   display: block;
   font-size: var(--font-size-small);
+}
+
+.materi_dr{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }
