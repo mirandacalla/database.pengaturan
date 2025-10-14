@@ -207,7 +207,7 @@ text-transform: uppercase;
   font-family: var(--font-primary);
   font-weight: bold;
   width: 15rem;
-  opacity: 0.8;
+  opacity: 0.;
 }
 
 .materi-list span{
