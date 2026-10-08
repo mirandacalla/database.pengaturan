@@ -327,7 +327,7 @@ body::after {
   position: relative;
   padding-left: 0;
   text-transform: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
   padding: 3px;
   background-color: #ffffff;
   border-radius: 10px;
@@ -382,7 +382,19 @@ body::after {
   }
 
   .footer-links {
+    bottom: var(--spacing-large);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    align-items: center;
     gap: 0.4rem;
+  }
+
+  .footer-link {
+    font-size: 0.9rem;
+    text-align: center;
+    white-space: normal;
+    padding: 3px 6px;
   }
 
   .coordinates {
@@ -400,22 +412,62 @@ body::after {
 }
 
 @media (max-width: 480px) {
+@media (max-width: 480px) {
+  .hero {
+    top: 35%;
+  }
+
+  .footer-links {
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    gap: 0.3rem;
+  }
+
+  .footer-link {
+    font-size: 0.8rem;
+    text-align: center;
+    white-space: normal;
+    padding: 3px 6px;
+  }
+}
+
+
+
   .hero-section {
     padding: var(--spacing-medium);
   }
 
   .header-area,
   .contact-info,
-  .footer-links,
   .coordinates {
     padding: 0 var(--spacing-medium);
   }
 
   .logo-container,
-  .contact-info,
-  .footer-links {
+  .contact-info {
     left: var(--spacing-medium);
   }
+
+  /* Footer tetap di tengah */
+  /* .footer-links {
+    bottom: var(--spacing-large);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    padding: 0;
+    align-items: center;
+    gap: 0.3rem;
+  }
+
+  /* Font lebih kecil di HP */
+  /* .footer-link {
+    font-size: 0.8rem;
+    text-align: center;
+    white-space: normal;
+    padding: 3px 6px;
+  }  */
 
   .coordinates {
     right: var(--spacing-medium);
@@ -450,12 +502,5 @@ body::after {
     width: 95%;
     font-size: 0.75rem;
   }
-
-  .footer-link {
-    font-size: 0.8rem;
-    text-align: center;
-    white-space: normal;
-    padding: 3px 6px;
-  }
 }
-
+  
