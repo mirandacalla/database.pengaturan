@@ -450,10 +450,12 @@ body::after {
     width: 95%;
     font-size: 0.75rem;
   }
-}
-.footer-link {
+
+  .footer-link {
     font-size: 0.8rem;
     text-align: center;
     white-space: normal;
     padding: 3px 6px;
   }
+}
+
