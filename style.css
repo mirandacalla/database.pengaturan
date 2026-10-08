@@ -38,6 +38,7 @@ text-align: center;
   --spacing-small: 0.5rem;
   --spacing-medium: 1rem;
   --spacing-large: 2rem;
+  --spacing-xlarge: 6rem;
   --transition-fast: 0.3s ease;
   --transition-medium: 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
@@ -232,7 +233,7 @@ body::after {
 
 .hero {
   position: fixed;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
@@ -304,17 +305,19 @@ body::after {
 
 .footer-links {
   position: fixed;
-  bottom: var(--spacing-large);
-  left: var(--spacing-large);
+  bottom: var(--spacing-xlarge);
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 10;
+
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   gap: 0.25rem;
+
   font-family: var(--font-sans);
   font-weight: 400;
   font-size: var(--font-size-regular);
-  
 }
 
 .footer-link {
@@ -324,7 +327,7 @@ body::after {
   position: relative;
   padding-left: 0;
   text-transform: none;
-  font-size: 1rem;
+  font-size: 1.5rem;
   padding: 3px;
   background-color: #ffffff;
   border-radius: 10px;
