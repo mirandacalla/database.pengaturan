@@ -114,7 +114,7 @@ body::after {
   /* background-image: url("https://img.freepik.com/premium-photo/white-dust-scratches-black-background_279525-2.jpg?w=640"); */
   background-image: url("https://static.promediateknologi.id/crop/0x0:0x0/0x0/webp/photo/p2/241/2025/03/20/WhatsApp-Image-2025-03-20-at-152553-2801202308.jpeg");
   /* background-repeat: repeat; */
-  opacity: 1;
+  opacity: .5;
   mix-blend-mode: multiply;
   pointer-events: none;
   z-index: 1;
