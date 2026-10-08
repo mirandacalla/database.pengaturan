@@ -327,7 +327,7 @@ body::after {
   position: relative;
   padding-left: 0;
   text-transform: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding: 3px;
   background-color: #ffffff;
   border-radius: 10px;
@@ -451,3 +451,9 @@ body::after {
     font-size: 0.75rem;
   }
 }
+.footer-link {
+    font-size: 0.8rem;
+    text-align: center;
+    white-space: normal;
+    padding: 3px 6px;
+  }
